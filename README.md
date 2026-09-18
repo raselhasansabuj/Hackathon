@@ -10,7 +10,7 @@ Building under constraints, collaborating with cross-functional teams, and shipp
 
 | Total Hackathons | Format | Status |
 | :---: | :---: | :---: |
-| 00+ | In-Person / Virtual / Hybrid | Actively Participating |
+| 10+ | In-Person / Virtual / Hybrid | Actively Participating |
 
 ---
 
