@@ -3,6 +3,19 @@
 GridWise is a REST API that plans how a building or microgrid should use solar power, a battery, and the grid over 24 hours, so the electricity bill is as low as possible.
 
 The special part is that the operator can write short notes in plain English, such as "Solar output will drop by half between 1 pm and 3 pm" or "Do not charge the battery between 6 pm and 9 pm". GridWise turns these notes into structured rules, checks them, and then solves the schedule with a math optimizer.
+GridWise is a FastAPI service that generates optimal 24-hour energy dispatch schedules for a solar + battery + grid setup. It combines natural-language operator directives with a linear programming solver to produce a cost-minimizing hourly plan.
+
+**Version: 3.1.0**
+
+🟢 **Live and deployed on Render:**
+
+| Resource | URL |
+| :--- | :--- |
+| Base URL | [https://bup-cse-fest-2026-grid.onrender.com](https://bup-cse-fest-2026-grid.onrender.com) |
+| Health check | [https://bup-cse-fest-2026-grid.onrender.com/health](https://bup-cse-fest-2026-grid.onrender.com/health) |
+| Interactive API docs (Swagger UI) | [https://bup-cse-fest-2026-grid.onrender.com/docs](https://bup-cse-fest-2026-grid.onrender.com/docs) |
+
+> **Note:** this runs on Render's free tier, so the service spins down after periods of inactivity. The first request after idle time may take 30–60 seconds to respond while it wakes up.
 
 ## How It Works
 
